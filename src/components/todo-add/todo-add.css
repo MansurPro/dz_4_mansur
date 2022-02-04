@@ -1,0 +1,28 @@
+.todo-input {
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid #096fb3;
+  outline: none;
+  width: 338px;
+  background: transparent;
+  color: rgb(0, 0, 0);
+}
+
+.todo-input::placeholder {
+    color: #423f3f;
+}
+
+.todo-button {
+    padding: 16px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    outline: none;
+    background: linear-gradient(
+      90deg,
+      rgb(48, 124, 238) 0%,
+      rgb(60, 171, 245) 100%
+    );
+    color: #fff;
+    text-transform: capitalize;
+  }
