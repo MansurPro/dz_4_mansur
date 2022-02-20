@@ -45,7 +45,7 @@ class TodoApi {
     createTodo = (label) => {
         const credentials = JSON.parse(localStorage.getItem('credentials'))
         return fetch(
-            `${this._baseUrl}/v1/`,
+            `${this._baseUrl}/v1/todo/`,
             {
                 method: 'POST',
                 headers: {
@@ -64,7 +64,7 @@ class TodoApi {
     deleteTodo = (id) => {
         const credentials = JSON.parse(localStorage.getItem('credentials'))
         return fetch(
-            `${this._baseUrl}/v1/${id}/`,
+            `${this._baseUrl}/v1/todo/${id}/`,
             {
                 method: 'DELETE',
                 headers: {
@@ -79,7 +79,7 @@ class TodoApi {
         const credentials = JSON.parse(localStorage.getItem('credentials'))
 
         return fetch(
-            `${this._baseUrl}/v1/${id}/`,
+            `${this._baseUrl}/v1/todo/${id}/`,
             {
                 method: 'PATCH',
                 headers: {
